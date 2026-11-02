@@ -17,6 +17,24 @@ def rotated_popen(args,*pos,**kwargs):
         from actionpi_app_launcher import preload
         env=preload(dict(kwargs.get('env') or os.environ))
         kwargs['env']=env
+    # ACTIONPI_FLYCAST_STANDALONE_ROTATION: preserve all unrelated preloads.
+    is_flycast=bool(command) and (command[0]=='/usr/bin/flycast' or command[:4]==['nice','-n','-4','/usr/bin/flycast'])
+    if is_flycast:
+        env=dict(kwargs.get('env') if kwargs.get('env') is not None else os.environ)
+        prepared=None
+        if env.get('ACTIONPI_MALI_SESSION')=='1':
+            sys.path.insert(0,'/boot/ACTIONPI_FIXES')
+            from actionpi_flycast_standalone_vulkan import prepare
+            prepared=prepare(args,env)
+        if prepared is not None:
+            args,kwargs['env']=prepared
+        else:
+            helper=Path('/boot/ACTIONPI_FIXES/flycast_gl_rotation.so')
+            if env.get('ACTIONPI_MALI_SESSION')=='1' and helper.is_file():
+                rotations={'app_output_rotation.so','retroarch_output_rotation.so','flycast_gl_rotation.so','sdl_output_rotation.so','od_commander_rotation.so'}
+                libs=[x for x in env.get('LD_PRELOAD','').replace(' ',':').split(':') if x and Path(x).name not in rotations]
+                env['LD_PRELOAD']=':'.join([str(helper),*libs])
+                kwargs['env']=env
     child=Popen(args,*pos,**kwargs)
     if command[:3]==['nice','-n','-4'] and len(command)>3:
         sys.path.insert(0,'/boot/ACTIONPI_FIXES')
@@ -39,6 +57,10 @@ def rotated_popen(args,*pos,**kwargs):
     return child
 
 def launch():
+    if os.environ.get('ACTIONPI_MALI_SESSION')=='1':
+        sys.path.insert(0,'/boot/ACTIONPI_FIXES')
+        from actionpi_flycast_standalone_vulkan import install_generator
+        install_generator()
     subprocess.Popen=rotated_popen
     try:runpy.run_path('/run/actionpi-emulatorlauncher-original',run_name='__main__')
     finally:subprocess.Popen=Popen

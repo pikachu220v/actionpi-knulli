@@ -249,3 +249,13 @@ The user confirmed the latest standalone game buttons, D-pad, sticks, L3 menu an
 - **Image refresh r2 — Saturn controller compatibility:** the standalone now honors the ordinary digital/3D analog pad selector. This fixes the confirmed START-button issue in affected games. In ordinary pad mode, the left stick and physical D-pad can both drive digital directions while preserving the ordinary Saturn controller protocol. Held inputs are merged so releasing one source does not release the other; diagonals, a center deadzone and saved axis inversion are supported. True 3D mode retains its analog input.
 
 The user confirmed the START compatibility fix, followed by normal operation of the merged stick and D-pad input on the device. A focused host check covered held-source release ordering, diagonals, opposite directions, deadzone, inversion, disconnect, START preservation and bypass in true analog mode. Final r2 images have not been freshly flashed.
+
+## v1.0.9 — 2026-11-03
+
+- **Flycast standalone now defaults to Vulkan:** the regular standalone entry launches the Action Pi build based on official Flycast v2.7. Existing RetroArch standard/VL/Xtreme cores remain available.
+- **User-reported performance:** in the games tried, the user reports performance on par with or better than the RetroArch cores. This is a hands-on assessment, not a controlled benchmark or a guarantee for every game.
+- **Press L3 (click the left analog stick) to open Flycast settings.** Game and menu output use the full-frame rotation correction; HOME returns to ES.
+- **Settings persist:** vibration-pack selection and other settings changed in Flycast survive exit and relaunch. Explicit ES settings take priority; the remaining app preferences and controller remaps are retained.
+- **GL fallback path retained:** the launcher includes the original GL path when the Vulkan payload is unavailable or explicitly disabled; switching back to GL was not separately tested in this final revision. Test-only Ports entries are excluded.
+
+the user confirmed Vulkan gameplay, menu orientation, L3, HOME return and final settings persistence. The final Vulkan default/settings revision has not separately been confirmed after reboot, and final distribution images have not yet been flashed to another SD card.

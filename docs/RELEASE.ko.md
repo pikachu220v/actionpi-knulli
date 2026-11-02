@@ -20,7 +20,7 @@
    네트워크 정보를 입력합니다.
 
 압축 해제한 이미지의 SHA256:
-`e98d684166a9a72cc70e10b325ee1034a779e915e9f456f12db5e5bc4975332b`.
+`cef5a6a24dc71286cbf77698a7e0b86bbe096244b714c7a1a50cc075b581202b`.
 배포판 구성 명세와 바이너리 구성 파일의 해시는 `release/`에 있습니다.
 
 소스 트리는 Git에 보관하고 큰 펌웨어 파일은 Releases에 올립니다.
@@ -55,3 +55,10 @@ PPSSPP는 1.20.4입니다. 첫 설치 대기·밝기 단축키·SELECT+START 종
 ## v1.0.8 r2
 
 이번 입력 수정을 포함한 파일명은 `action-pi-knulli-v1.0.8-r2.img.xz`이며 CRC판은 `action-pi-knulli-v1.0.8-crc-ko-r2.img.xz`입니다. 이전 v1.0.8을 받았다면 r2를 다시 받아 주세요.
+
+
+## v1.0.9
+
+새턴 스탠드얼론 1.20.51 GLES의 설정 메뉴는 **L3(왼쪽 스틱 클릭)**로 열고 닫습니다.
+
+Flycast 스탠드얼론은 Vulkan 기본이며 L3(왼쪽 스틱 클릭)로 설정 메뉴에 들어갑니다. BOOT에 ACTIONPI_FIXES/DISABLE_FLYCAST_STANDALONE_VULKAN 빈 파일을 만들면 GL 복구 경로를 선택합니다. 최종판의 GL 전환 자체는 별도 재시험하지 않았습니다.

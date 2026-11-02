@@ -1,0 +1,11 @@
+{
+  "archive": "flycast-standalone-v1.0.9-sources.tar.xz",
+  "archive_sha256": "b7d3621c349a7d30ba932115ac219d3f7624d847c238e355c9f8d2cbbc216e25",
+  "bytes": 111370672,
+  "files": 18020,
+  "source_commit": "5aa091fde632fb332c8d8c34e280d62dc951954c",
+  "binary_sha256": "4eca8bb183ed44d3c171581f72f5c7dbf692559ae2a20ca081a0681f9cefb4d2",
+  "module_sha256": "a00d79309cb463dbe1ba06453cc18814559ac3301c6337a60432935b826910ff",
+  "launcher_sha256": "aa4d583c1228200a708dc3f7e239c0021b83621358ae290d316d9feae2bbd153",
+  "hardware_tested_binary_rebuilt_for_release": false
+}

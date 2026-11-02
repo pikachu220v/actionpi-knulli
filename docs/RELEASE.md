@@ -20,7 +20,7 @@ the cleared free space efficiently.
    details when downloads are needed.
 
 Raw image SHA256:
-`e98d684166a9a72cc70e10b325ee1034a779e915e9f456f12db5e5bc4975332b`.
+`cef5a6a24dc71286cbf77698a7e0b86bbe096244b714c7a1a50cc075b581202b`.
 The public manifest and binary component hashes are in `release/`.
 
 The source tree is stored in Git; the large firmware belongs in Releases.
@@ -55,3 +55,10 @@ Open/close the Yaba Sanshiro standalone 1.20.51 GLES settings menu with **L3 (cl
 ## v1.0.8 r2
 
 Use `action-pi-knulli-v1.0.8-r2.img.xz`, or `action-pi-knulli-v1.0.8-crc-ko-r2.img.xz` for the CRC edition, to receive the confirmed input fixes. Download r2 again if you have the earlier v1.0.8 image.
+
+
+## v1.0.9
+
+Open/close the Yaba Sanshiro standalone 1.20.51 GLES settings menu with **L3 (click the left analog stick)**.
+
+Flycast standalone defaults to Vulkan. Press L3 (click the left stick) for settings. An empty ACTIONPI_FIXES/DISABLE_FLYCAST_STANDALONE_VULKAN file on BOOT selects the GL fallback path; that final rollback transition was not separately hardware-tested.

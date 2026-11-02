@@ -1,0 +1,26 @@
+{
+  "boot/ACTIONPI_FIXES/actionpi_flycast_standalone_vulkan.py": {
+    "bytes": 6548,
+    "sha256": "a00d79309cb463dbe1ba06453cc18814559ac3301c6337a60432935b826910ff"
+  },
+  "boot/ACTIONPI_FIXES/retroarch_rotation_launcher.py": {
+    "bytes": 3713,
+    "sha256": "aa4d583c1228200a708dc3f7e239c0021b83621358ae290d316d9feae2bbd153"
+  },
+  "boot/MALI_MENU_TRIAL/retroarch_rotation_launcher.py": {
+    "bytes": 3713,
+    "sha256": "aa4d583c1228200a708dc3f7e239c0021b83621358ae290d316d9feae2bbd153"
+  },
+  "userdata/system/background-quiet/quiet_start.py": {
+    "bytes": 3449,
+    "sha256": "45e3926af1443017042f4b8c14d5795b8bf7487617c208bf486be42eeb49c9c1"
+  },
+  "userdata/system/flycast-standalone-vulkan/ENABLED": {
+    "bytes": 27,
+    "sha256": "de63167dd540757fc4c6b4f30d17fc004dac29df404375c05e9c35eef05b9425"
+  },
+  "userdata/system/flycast-standalone-vulkan/bin/flycast": {
+    "bytes": 28664960,
+    "sha256": "4eca8bb183ed44d3c171581f72f5c7dbf692559ae2a20ca081a0681f9cefb4d2"
+  }
+}

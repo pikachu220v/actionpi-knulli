@@ -91,3 +91,9 @@ MALI_MENU_TRIAL/mali_session.py는 게임 종료 후 재진입 때만 actionpi_e
 ## v1.0.8 r2
 
 v1.0.8 릴리스 번호를 유지한 r2 이미지에 두 입력 수정을 병합했습니다. player1.pad의 padmode를 따라 일반/3D 패드를 선택하고, 일반 모드에서는 저장된 방향·analogx/analogy 매핑을 함께 샘플링하여 디지털 방향을 합칩니다. 방향 입력만 병합기가 담당하므로 한 입력의 해제가 다른 입력을 취소하지 않습니다. L3·FPS·오디오·GLES 회전은 유지합니다. tools/package-v1.0.8-r2.py는 기존 v1.0.8에서 BOOT의 새턴 실행 파일과 payload.json만 바꾸며, 기본 rootfs·설정 아카이브·다른 에뮬레이터는 유지합니다. 이미지 파일명은 r2로 구분하고, 이전 태그는 이동하지 않습니다. 갱신 릴리스의 기술 문서 링크는 이번 소스 커밋으로 고정합니다. 전체 대응 소스는 saturn-standalone-1.20.51-v1.0.8-r2-sources.tar.xz입니다.
+
+## v1.0.9
+
+야바산시로 1.20.51 GLES는 BOOT의 ACTIONPI_FIXES/saturn에 저장하고 actionpi_app_launcher.py로 실행합니다. 쓰기 가능한 HOME은 /userdata/system/configs/yabasanshiro-1.20.51입니다. 실행기는 ES에서 누락된 입력 매핑을 생성하고 실제 L3 매핑과 기존 회전 보정기를 사용합니다. 내장 ARM64 JIT가 이전 1.9.0 보조 모듈을 대체하며 볼륨 후크는 사용자 볼륨을 유지합니다. 읽기 전용 기본 rootfs 안의 기존 바이너리는 남지만 평소 실행 경로에서는 사용하지 않습니다. tools/package-v1.0.9.py는 클린 v1.0.8에 BOOT 파일 5개와 버전 정보만 추가·수정하며 설정 아카이브·기본 rootfs·Mali·Wi-Fi·PPSSPP·Flycast·ZRAM은 바이트 단위로 유지합니다. 전체 수정 소스·libchdr·라이선스·빌드 자료는 saturn-standalone-1.20.51-v1.0.9-sources.tar.xz로 첨부하며 의존성과 빌드 조건은 src/saturn-standalone에 기록합니다. 상속된 모든 펌웨어 바이너리의 정확한 소스 출처까지 확인됐다는 뜻은 아닙니다.
+
+최종 Flycast 모듈은 configgen 전 install_generator로 앱 설정을 보존하고 Popen 전 prepare로 Vulkan 실행 파일/기존 회전 로더를 선택합니다. 바이너리와 ENABLED는 깨끗한 settings.tar.gz에 추가하고, 개인 emu.cfg·VMU·저장·ROM·BIOS는 가져오지 않습니다. 런처 두 사본과 manifest 해시를 함께 갱신하며 GL 경로를 유지합니다. 이전 r2 새턴 및 기존 코어/다른 앱 파일은 보존합니다. 전체 소스·Zig 빌드 자료는 src/flycast-standalone-vulkan 및 flycast-standalone-v1.0.9-sources.tar.xz를 참조합니다. 최종 바이너리는 검증된 4eca8b... 바이트 그대로이며 test 버전 문자열을 바꾸려고 다시 빌드하지 않았습니다. 추가 quiet_start는 부팅 60초 진단만 차단하고 기존 로그 복사/통계 차단은 유지합니다.

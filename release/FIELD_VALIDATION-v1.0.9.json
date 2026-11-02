@@ -1,0 +1,12 @@
+{
+  "version": "v1.0.9",
+  "date": "2026-11-02",
+  "scope_en": "the user confirmed Vulkan gameplay, menu orientation, L3, HOME return and final settings persistence. The final Vulkan default/settings revision has not separately been confirmed after reboot, and final distribution images have not yet been flashed to another SD card.",
+  "scope_ko": "사용자가 Vulkan 게임 실행·메뉴 방향·L3·HOME 복귀·최종 설정 지속성을 확인했습니다. 최종 Vulkan 기본/설정 보존 단계의 별도 재부팅 및 최종 배포 이미지의 새 SD 설치 확인은 아직 하지 않았습니다.",
+  "fresh_final_image_flash_tested": false,
+  "standalone_vulkan_user_confirmed": true,
+  "l3_user_confirmed": true,
+  "final_settings_user_confirmed": true,
+  "final_vulkan_reboot_confirmed": false,
+  "controlled_benchmark": false
+}

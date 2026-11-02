@@ -1,0 +1,243 @@
+{
+  "standard": {
+    "version": "2.7",
+    "tag": "v2.7",
+    "commit": "5aa091fde632fb332c8d8c34e280d62dc951954c",
+    "release": "https://github.com/flyinghead/flycast/releases/tag/v2.7"
+  },
+  "standard_archives": [
+    {
+      "repo": "flyinghead/flycast",
+      "ref": "5aa091fde632fb332c8d8c34e280d62dc951954c",
+      "path": "",
+      "archive": "source-5aa091fde632.tar.gz",
+      "sha256": "e33c0db25a297a94312288d3056bed43ef1dd8cb8e26fc7538f16d679e51da33"
+    },
+    {
+      "repo": "libsdl-org/SDL",
+      "ref": "00d4f1c2c4ad2dc95d26b18743541f57b1dca56d",
+      "path": "core/deps/SDL",
+      "archive": "core_deps_SDL-00d4f1c2c4ad.tar.gz",
+      "sha256": "70d6cc3cc409e44dea0163de9db3e44fb56f904b5c71d40f6fbfb00671dd985b"
+    },
+    {
+      "repo": "flyinghead/libchdr",
+      "ref": "5f82799f2c8cad1e9cd26d39a0f8d36369a5534b",
+      "path": "core/deps/libchdr",
+      "archive": "core_deps_libchdr-5f82799f2c8c.tar.gz",
+      "sha256": "11b01f5d376128c78100e48ad5db34edd0d33510fd047a5a22c03aa8e35cfd00"
+    },
+    {
+      "repo": "vinniefalco/LuaBridge",
+      "ref": "5d21e35633a1f87ed08af115b07d3386096f792b",
+      "path": "core/deps/luabridge",
+      "archive": "core_deps_luabridge-5d21e35633a1.tar.gz",
+      "sha256": "75af9f79e1f818990fca3a9173dcc32a55f4ebd088c931193be4c9b2d8336abc"
+    },
+    {
+      "repo": "google/googletest",
+      "ref": "58f3f1005cffce8a9d005d0361d3471cd9947501",
+      "path": "core/deps/luabridge/third_party/gtest",
+      "archive": "core_deps_luabridge_third_party_gtest-58f3f1005cff.tar.gz",
+      "sha256": "471d0389f33d9428d2e3907be85a111b5c05165914ff3b5e91c522cc38215870"
+    },
+    {
+      "repo": "flyinghead/mingw-breakpad",
+      "ref": "1ab24bcc817ebe629bf77daa53529d02361cb1e9",
+      "path": "core/deps/breakpad",
+      "archive": "core_deps_breakpad-1ab24bcc817e.tar.gz",
+      "sha256": "3fbde8f8cc156cd257504a9f0e7d08b2ecb948d4e6473aea081eea70a9d9a6f0"
+    },
+    {
+      "repo": "KhronosGroup/Vulkan-Headers",
+      "ref": "b5c8f996196ba4aa6d8f97e52b5d3b6e70f7e4e2",
+      "path": "core/deps/Vulkan-Headers",
+      "archive": "core_deps_Vulkan-Headers-b5c8f996196b.tar.gz",
+      "sha256": "7937d8ec21785736436d9ff52564db7d55992070b5ac98324472cce6e425a7ba"
+    },
+    {
+      "repo": "GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator",
+      "ref": "1d8f600fd424278486eade7ed3e877c99f0846b1",
+      "path": "core/deps/VulkanMemoryAllocator",
+      "archive": "core_deps_VulkanMemoryAllocator-1d8f600fd424.tar.gz",
+      "sha256": "04b278f5a185ef75a7ea988e0e76ddd0b2f2186bf56dd90625159972a47dcb3b"
+    },
+    {
+      "repo": "KhronosGroup/glslang",
+      "ref": "fc9889c889561c5882e83819dcaffef5ed45529b",
+      "path": "core/deps/glslang",
+      "archive": "core_deps_glslang-fc9889c88956.tar.gz",
+      "sha256": "d73a9ac1cf94ef36163ee81ad53308abf3abdfe1e2aad4d51b364baa1e68d8a9"
+    },
+    {
+      "repo": "google/oboe",
+      "ref": "a81bb9f87d4105b84b682685d3bfbb5beca371d1",
+      "path": "core/deps/oboe",
+      "archive": "core_deps_oboe-a81bb9f87d41.tar.gz",
+      "sha256": "9b7d46ceb72fb7b097582306dcbbf04f3a24ce5fd2257f471a7034c72e1046ed"
+    },
+    {
+      "repo": "vkedwardli/Syphon-Framework",
+      "ref": "53ec412a78b246c84cedcb4a2a5b92852704d61d",
+      "path": "core/deps/Syphon",
+      "archive": "core_deps_Syphon-53ec412a78b2.tar.gz",
+      "sha256": "6166bb80941ee1f2980785ee87b6542cea4e2e3628dd68d1def7dfd342e1ef0d"
+    },
+    {
+      "repo": "vkedwardli/Spout2",
+      "ref": "2110a918e720688f3cb2118302fd153db8745ace",
+      "path": "core/deps/Spout",
+      "archive": "core_deps_Spout-2110a918e720.tar.gz",
+      "sha256": "220fe7d861f6a70975f8613141a870f5aae8752a78f3b6b2f5376bf6b8d1bcee"
+    },
+    {
+      "repo": "harmonytf/discord-rpc",
+      "ref": "c62c34d37cd90b75187a1212e13ce4145bafbdd7",
+      "path": "core/deps/discord-rpc",
+      "archive": "core_deps_discord-rpc-c62c34d37cd9.tar.gz",
+      "sha256": "9486bbc063792b095c97f9d01d65412086371b36b3323eafe7a3837f501b8185"
+    },
+    {
+      "repo": "Tencent/rapidjson",
+      "ref": "8261c1ddf43f10de00fd8c9a67811d1486b2c784",
+      "path": "core/deps/discord-rpc/thirdparty/rapidjson",
+      "archive": "core_deps_discord-rpc_thirdparty_rapidjson-8261c1ddf43f.tar.gz",
+      "sha256": "ce87a755fb21487530e91cb457e2eb4bee30f616c373988c34f11ee4adffbdb1"
+    },
+    {
+      "repo": "google/googletest",
+      "ref": "ba96d0b1161f540656efdaed035b3c062b60e006",
+      "path": "core/deps/discord-rpc/thirdparty/rapidjson/thirdparty/gtest",
+      "archive": "core_deps_discord-rpc_thirdparty_rapidjson_thirdparty_gtest-ba96d0b1161f.tar.gz",
+      "sha256": "949c556896cf31ed52e53449e17a1276b8b26d3ee5932f5ca49ee929f4b35c51"
+    },
+    {
+      "repo": "bylaws/libadrenotools",
+      "ref": "8fae8ce254dfc1344527e05301e43f37dea2df80",
+      "path": "core/deps/libadrenotools",
+      "archive": "core_deps_libadrenotools-8fae8ce254df.tar.gz",
+      "sha256": "ceffce971676d4cfdf348a082df06fc92a1dca6d95bea892a480d63f200961cb"
+    },
+    {
+      "repo": "bylaws/liblinkernsbypass",
+      "ref": "aa3975893d83ef1bc84c321ec60c65fbf1287887",
+      "path": "core/deps/libadrenotools/lib/linkernsbypass",
+      "archive": "core_deps_libadrenotools_lib_linkernsbypass-aa3975893d83.tar.gz",
+      "sha256": "da1128c8aa771c4d24766b53a47822d0717baa5c536ca8491220402942b80638"
+    },
+    {
+      "repo": "RetroAchievements/rcheevos",
+      "ref": "3106e6d3d274b63c59976cb07dda94a292ab45ca",
+      "path": "core/deps/rcheevos",
+      "archive": "core_deps_rcheevos-3106e6d3d274.tar.gz",
+      "sha256": "97f94c416a24bb7965f2ce80af37b6c8001958bd5680b0535bbcf275d4d6654b"
+    },
+    {
+      "repo": "google/googletest",
+      "ref": "e39786088138f2749d64e9e90e0f9902daa77c40",
+      "path": "core/deps/googletest",
+      "archive": "core_deps_googletest-e39786088138.tar.gz",
+      "sha256": "babf242cebeb22fefb5541a728c94ee5bd3aafe58dfd8ad8a1988a74fc5e5ce0"
+    },
+    {
+      "repo": "flyinghead/asio",
+      "ref": "d3402006e84efb6114ff93e4f2b8508412ed80d5",
+      "path": "core/deps/asio",
+      "archive": "core_deps_asio-d3402006e84e.tar.gz",
+      "sha256": "0364ea2e2b9c1623e32a9587e0e2da08669f0f8d0f6be9abaa48e57d992ed079"
+    },
+    {
+      "repo": "herumi/xbyak",
+      "ref": "0d67fd1530016b7c56f3cd74b3fca920f4c3e2b4",
+      "path": "core/deps/xbyak",
+      "archive": "core_deps_xbyak-0d67fd153001.tar.gz",
+      "sha256": "18aa05ac8e4bd5f5cb52c5481b86ba02cac395ad8cdbec6fe5acac94ad546dc8"
+    },
+    {
+      "repo": "paullouisageneau/libjuice",
+      "ref": "77daa8befd828046169adbb012d8de928bfdcdd4",
+      "path": "core/deps/libjuice",
+      "archive": "core_deps_libjuice-77daa8befd82.tar.gz",
+      "sha256": "2cf9d6e37974bdf330b92692229b0af72ca9fe2d767893c81a776cafb9369471"
+    },
+    {
+      "repo": "zaphoyd/websocketpp",
+      "ref": "1b11fd301531e6df35a6107c1e8665b1e77a2d8e",
+      "path": "core/deps/websocketpp",
+      "archive": "core_deps_websocketpp-1b11fd301531.tar.gz",
+      "sha256": "1b88a0d45642bb2f9e4144ddf2e2586b112c669f176d257333a75e8a926683ae"
+    },
+    {
+      "repo": "OrangeFox86/DreamPicoPort-API",
+      "ref": "e06d9f6c59833fc7bb7f2a33c960614489811ef8",
+      "path": "core/deps/DreamPicoPort-API",
+      "archive": "core_deps_DreamPicoPort-API-e06d9f6c5983.tar.gz",
+      "sha256": "96cda92f84de0f6eae1a240fdd43bf3b410334e325d2f2148a1fb4553629f236"
+    },
+    {
+      "repo": "libusb/libusb-cmake",
+      "ref": "000e06eb241927db0f34e6867637d39b849ab989",
+      "path": "core/deps/DreamPicoPort-API/ext/libusb-cmake",
+      "archive": "core_deps_DreamPicoPort-API_ext_libusb-cmake-000e06eb2419.tar.gz",
+      "sha256": "3af75a6c622e3f2801040f7517cb75f81fe896004fbb077664729cce043ce6eb"
+    },
+    {
+      "repo": "flyinghead/tinygettext",
+      "ref": "41572a67f96013691685a38f0032f3c97aa34f79",
+      "path": "core/deps/tinygettext",
+      "archive": "core_deps_tinygettext-41572a67f960.tar.gz",
+      "sha256": "1ceb1c0f77caaf500806cdd8a14e122762e43ce3a399a2aa228dfc0174ede709"
+    },
+    {
+      "repo": "Grumbel/tinycmmc",
+      "ref": "9a51e13802d930feb7261ba8876940659b258cb7",
+      "path": "core/deps/tinygettext/external/tinycmmc",
+      "archive": "core_deps_tinygettext_external_tinycmmc-9a51e13802d9.tar.gz",
+      "sha256": "60ed6cd061401ad76ebcde9e4b8847b85b4dfa0a86cf2bd7d99fa01f9a233a1d"
+    },
+    {
+      "repo": "freetype/freetype",
+      "ref": "0a0221a1347e2f1e07c395263540026e9a0aa7c7",
+      "path": "core/deps/freetype",
+      "archive": "core_deps_freetype-0a0221a1347e.tar.gz",
+      "sha256": "11cd478953fc1d382f20a233b8e2aed6c31b47cbf0568c4bdb3334bcc1550698"
+    },
+    {
+      "repo": "nyorain/dlg",
+      "ref": "395ccad2c1e0daae535c4d20bb0a3f2424648e17",
+      "path": "core/deps/freetype/subprojects/dlg",
+      "archive": "core_deps_freetype_subprojects_dlg-395ccad2c1e0.tar.gz",
+      "sha256": "263a4a3777d9839e34cd41db988310659e0c00eab37beb7aedd30511a460133b"
+    },
+    {
+      "repo": "flyinghead/gamesdk",
+      "ref": "4ac9952e6a5b3e0846003cb156b4a664178b7549",
+      "path": "core/deps/gamesdk",
+      "archive": "core_deps_gamesdk-4ac9952e6a5b.tar.gz",
+      "sha256": "aba4446ae832187fa9fefe9bf37b773f460e5a258ea7d8275ec8f59b66fcb031"
+    }
+  ],
+  "variants": [
+    {
+      "name": "vl",
+      "repository": "libretro/flycast",
+      "ref": "4a913e063c95d1fae98afc64645831de0bcad57e",
+      "url": "https://codeload.github.com/libretro/flycast/tar.gz/4a913e063c95d1fae98afc64645831de0bcad57e",
+      "file": "vl-source.tar.gz",
+      "bytes": 6580553,
+      "sha256": "37c56185e2cb7d88042161c5f5ae2fd38f7648ccc76e999659bcf333d2f28f4c"
+    },
+    {
+      "name": "xtreme",
+      "repository": "metallic77/flycast",
+      "ref": "603814c9f73b773c455d9a497f389d2f93a257fd",
+      "url": "https://codeload.github.com/metallic77/flycast/tar.gz/603814c9f73b773c455d9a497f389d2f93a257fd",
+      "file": "xtreme-source.tar.gz",
+      "bytes": 6822825,
+      "sha256": "8aa94bdd669bab05a10ff03c8a977eccd41a30063271da3f81a7a50b1a72f4ca"
+    }
+  ],
+  "archive": "flycast-v1.0.6-sources.tar",
+  "archive_sha256": "85214e38ba53a0824541994b1400917bd4ed7e1547f8e06c567299dbfa70502a",
+  "archive_bytes": 184248320
+}

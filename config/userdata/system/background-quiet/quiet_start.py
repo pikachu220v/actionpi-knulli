@@ -21,10 +21,12 @@ def terminate(pid,expected):
         try:os.kill(pid,signal.SIGTERM)
         except ProcessLookupError:pass
 
+SNAPSHOT='(sleep 60;{ ps -ef;cat /proc/fb;for f in /sys/class/graphics/fb0/virtual_size /sys/class/graphics/fb0/stride /sys/class/graphics/fb0/bits_per_pixel /sys/class/drm/card0-*/status /sys/class/drm/card0-*/modes;do echo =$f;cat $f;done;cat /boot/boot/a30-es.log; } >/boot/boot/a30-runtime.log 2>&1)&'
+
 def quiet():
     rc=Path('/etc/init.d/rcS');text=rc.read_text()
-    if LOOP in text.splitlines():
-        rc.write_text('\n'.join(s for s in text.splitlines() if s!=LOOP)+'\n')
+    if any(s in (LOOP,SNAPSHOT) for s in text.splitlines()):
+        rc.write_text('\n'.join(s for s in text.splitlines() if s not in (LOOP,SNAPSHOT))+'\n')
     stopped=[]
     # An already-running shell has parsed the old loop. Its orphaned process is
     # identified by exact rcS command + its exact sleep/copy child, never by name alone.
@@ -35,6 +37,10 @@ def quiet():
             kids={k:v for k,v in ps.items() if v['ppid']==pid}
             matches=[v['cmd'] in (['sleep','2'],['/bin/sleep','2']) or
                      ('/var/run/boot.log' in v['cmd'] and '/boot/boot/a30-progress.log' in v['cmd']) for v in kids.values()]
+            # Both known jobs are forked by the inherited rcS header.
+            # Match the exact parent script and exact child command only.
+            if SNAPSHOT in text.splitlines():
+                matches += [v['cmd'] in (['sleep','60'],['/bin/sleep','60']) for v in kids.values()]
             if not any(matches):continue
             found=True;terminate(pid,p)
             for child,info in kids.items():terminate(child,info)
@@ -52,6 +58,7 @@ def quiet():
             selected|=children
         for pid in sorted(selected):terminate(pid,ps[pid]);stats_stopped.append(pid)
     return {'loop_stopped':stopped,'telemetry':telemetry,'stats_stopped':stats_stopped,
-            'rcS_loop_removed':LOOP not in rc.read_text()}
+            'rcS_loop_removed':LOOP not in rc.read_text(),
+            'boot_snapshot_removed':SNAPSHOT not in rc.read_text()}
 
 if __name__=='__main__':print(json.dumps(quiet()))

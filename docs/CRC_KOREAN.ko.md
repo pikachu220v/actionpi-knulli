@@ -1,4 +1,4 @@
-# 한국 사용자용 CRC 무시 코어 적용판 — v1.0.8
+# 한국 사용자용 CRC 무시 코어 적용판 — v1.0.9
 
 CRC 무시 코어는 **[dsno님 자료](https://dsno.tistory.com/m/)**를 사용했습니다.
 
@@ -7,8 +7,8 @@ CRC 무시 코어는 **[dsno님 자료](https://dsno.tistory.com/m/)**를 사용
 
 | 용도 | 다운로드 |
 | --- | --- |
-| 기본 배포판 | [일반판 v1.0.8](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.8) |
-| 한글 패치 아케이드용 CRC 무시 코어 필요 | [CRC 적용판 v1.0.8](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.8-crc-ko) |
+| 기본 배포판 | [일반판 v1.0.9](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.9) |
+| 한글 패치 아케이드용 CRC 무시 코어 필요 | [CRC 적용판 v1.0.9](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.9-crc-ko) |
 
 ## 적용 내용
 

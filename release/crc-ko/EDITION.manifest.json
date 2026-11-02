@@ -1,12 +1,12 @@
 {
-  "version": "v1.0.8",
+  "version": "v1.0.9",
   "edition": "crc-ko",
-  "release_tag": "v1.0.8-crc-ko",
-  "image": "action-pi-knulli-v1.0.8-crc-ko-r2.img",
+  "release_tag": "v1.0.9-crc-ko",
+  "image": "action-pi-knulli-v1.0.9-crc-ko.img",
   "bytes": 6069178368,
-  "sha256": "50493a9ab82b21a99fadce48dfd44380a584edf6f367d4361666b2fef80ac169",
-  "base_image": "action-pi-knulli-v1.0.8-r2.img",
-  "base_sha256": "e98d684166a9a72cc70e10b325ee1034a779e915e9f456f12db5e5bc4975332b",
+  "sha256": "0702b8b3734c97d5b4b3223f0a121a75c7a5802cef594bef1c958fdcb609b304",
+  "base_image": "action-pi-knulli-v1.0.9.img",
+  "base_sha256": "cef5a6a24dc71286cbf77698a7e0b86bbe096244b714c7a1a50cc075b581202b",
   "cores": {
     "fbneo_libretro.so": {
       "bytes": 83514112,
@@ -19,7 +19,7 @@
   },
   "startup": "S99userservices -> /userdata/system/custom.sh -> custom-cores/load.py; bind mounts; no save-overlay",
   "mame2003_plus_alias": "mame078plus_libretro.so when present",
-  "default_settings": "Same clean English defaults as standard v1.0.8; Wi-Fi and ZRAM off; no saved personal network",
+  "default_settings": "Same clean English defaults as standard v1.0.9; Wi-Fi and ZRAM off; no saved personal network",
   "games_included": false,
   "additional_personal_bios_included": false,
   "save_overlay_required": false,
@@ -29,11 +29,9 @@
     "crc_arcade_cores_preserved": true,
     "kernel_mali_wifi_ppsspp_zram_unchanged": true,
     "private_configuration_copied": false,
-    "unchanged_bytes_compared": 6054825984,
+    "unchanged_bytes_compared": 5880160256,
     "old_images_unchanged": true,
-    "boot_and_userdata_payload_readback": true,
-    "digital_pad_protocol_preserved": true,
-    "stick_dpad_merge_host_test_passed": true
+    "boot_and_userdata_payload_readback": true
   },
   "source_provenance": "CRC-override core materials from dsno, supplied by the user; exact corresponding source/patch versions were not supplied. Upstream source links remain references.",
   "loader_source_sha256": "ca8f581717eba6d8f26c2291e336f31ff43af17ff483ccc3f89aa408296608e3",
@@ -43,7 +41,7 @@
     "url": "https://dsno.tistory.com/m/",
     "identified_by": "user"
   },
-  "packaging_source_image": "action-pi-knulli-v1.0.8-crc-ko.img",
+  "packaging_source_image": "action-pi-knulli-v1.0.8-crc-ko-r2.img",
   "ppsspp_version": "1.20.4",
   "zram_default_enabled": false,
   "bennugd": {
@@ -52,5 +50,6 @@
     "provenance": "User-supplied binary; exact corresponding source/build not supplied"
   },
   "saturn_standalone_version": "1.20.51",
-  "image_revision": "r2"
+  "flycast_standalone_version": "2.7",
+  "flycast_standalone_renderer": "vulkan"
 }

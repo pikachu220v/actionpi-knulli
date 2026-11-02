@@ -57,7 +57,7 @@
   },
   "ACTIONPI_FIXES/manifest.json": {
     "bytes": 2636,
-    "sha256": "840ca41031c5372b1e130b7e57229cb9274ced8b84cd6554d2dd2ce2df999588"
+    "sha256": "521accb9cbcc6fc6f28a3bdfae1fff8d98c5b5f162ef0a780cad72f968a9b3ab"
   },
   "MALI_MENU_TRIAL/mali_menu_trial.py": {
     "bytes": 8242,
@@ -748,12 +748,12 @@
     "sha256": "8e378ab93586eb55135d3bc119cce787f7324f48394777d00c34fa3d0be3303f"
   },
   "STABLE_V119/settings.tar.gz": {
-    "bytes": 55695383,
-    "sha256": "fd2be5ce33e6b7d3334a8e3f4e1b77bac74ece633a4c5e809739679c76c64abf"
+    "bytes": 62028676,
+    "sha256": "2549da276e8493b2c3e6673c1ad54425d8ae415c73885aed53817ab31acec969"
   },
   "STABLE_V119/payload.json": {
-    "bytes": 1452,
-    "sha256": "4f271da6058ceef4c95c3994e325b67180cf5627e2906f562e38294d6ab182fe"
+    "bytes": 1642,
+    "sha256": "3959174cde9198c9bee31f848a479c1aa4a80877d47fbabe56f36d865aef2352"
   },
   "boot-custom.sh": {
     "bytes": 308,
@@ -790,5 +790,17 @@
   "ACTIONPI_FIXES/saturn/yabasanshiro": {
     "bytes": 3844536,
     "sha256": "f6119fd510066b14781c32849b858056c62f31f87827170b6a0113560e55c6eb"
+  },
+  "ACTIONPI_FIXES/actionpi_flycast_standalone_vulkan.py": {
+    "bytes": 6548,
+    "sha256": "a00d79309cb463dbe1ba06453cc18814559ac3301c6337a60432935b826910ff"
+  },
+  "ACTIONPI_FIXES/retroarch_rotation_launcher.py": {
+    "bytes": 3713,
+    "sha256": "aa4d583c1228200a708dc3f7e239c0021b83621358ae290d316d9feae2bbd153"
+  },
+  "MALI_MENU_TRIAL/retroarch_rotation_launcher.py": {
+    "bytes": 3713,
+    "sha256": "aa4d583c1228200a708dc3f7e239c0021b83621358ae290d316d9feae2bbd153"
   }
 }

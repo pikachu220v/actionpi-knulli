@@ -15,8 +15,8 @@ Choose your edition:
 
 | Edition | Release download |
 | --- | --- |
-| Standard / 일반판 | [Action Pi Knulli v1.0.8 · r2 image](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.8) |
-| 한국 사용자용 CRC 무시 코어 적용판 | [CRC 적용판 v1.0.8 · r2 다운로드](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.8-crc-ko) |
+| Standard / 일반판 | [Action Pi Knulli v1.0.9](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.9) |
+| 한국 사용자용 CRC 무시 코어 적용판 | [CRC 적용판 v1.0.9 다운로드](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.9-crc-ko) |
 
 Use the `.img.xz` asset and matching SHA256 file. Extract the image if your flashing
 application does not accept XZ, then write the image to the **whole SD card**.
@@ -106,6 +106,16 @@ that helped establish the vendor-stack direction.
 
 ## Release history
 
+### v1.0.9 changes
+
+- **Flycast standalone now defaults to Vulkan:** the regular standalone entry launches the Action Pi build based on official Flycast v2.7. Existing RetroArch standard/VL/Xtreme cores remain available.
+- **User-reported performance:** in the games tried, the user reports performance on par with or better than the RetroArch cores. This is a hands-on assessment, not a controlled benchmark or a guarantee for every game.
+- **Press L3 (click the left analog stick) to open Flycast settings.** Game and menu output use the full-frame rotation correction; HOME returns to ES.
+- **Settings persist:** vibration-pack selection and other settings changed in Flycast survive exit and relaunch. Explicit ES settings take priority; the remaining app preferences and controller remaps are retained.
+- **GL fallback path retained:** the launcher includes the original GL path when the Vulkan payload is unavailable or explicitly disabled; switching back to GL was not separately tested in this final revision. Test-only Ports entries are excluded.
+
+the user confirmed Vulkan gameplay, menu orientation, L3, HOME return and final settings persistence. The final Vulkan default/settings revision has not separately been confirmed after reboot, and final distribution images have not yet been flashed to another SD card.
+
 ### v1.0.8 changes
 
 - **Image refresh r2 — Saturn controller compatibility:** the standalone now honors the ordinary digital/3D analog pad selector. This fixes the confirmed START-button issue in affected games. In ordinary pad mode, the left stick and physical D-pad can both drive digital directions while preserving the ordinary Saturn controller protocol. Held inputs are merged so releasing one source does not release the other; diagonals, a center deadzone and saved axis inversion are supported. True 3D mode retains its analog input.
@@ -182,8 +192,8 @@ Wi-Fi reboot persistence, AIC/RTL8723DS support, emulator/tool/game rotation and
 
 ## Downloads / 다운로드
 
-### [일반판 v1.0.8 · r2 / Standard edition](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.8)
+### [일반판 v1.0.9 / Standard edition](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.9)
 
-### [한국 사용자용 — CRC 무시 코어 적용판 v1.0.8 · r2](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.8-crc-ko)
+### [한국 사용자용 — CRC 무시 코어 적용판 v1.0.9](https://github.com/pikachu220v/actionpi-knulli/releases/tag/v1.0.9-crc-ko)
 
 CRC 무시 코어: [dsno님 자료](https://dsno.tistory.com/m/). [CRC판 한국어 안내](docs/CRC_KOREAN.ko.md).

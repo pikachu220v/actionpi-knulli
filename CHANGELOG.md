@@ -9,6 +9,21 @@ Public release numbering starts at **v1.0.0**.
 
 
 
+
+## v1.0.9 — 2026-11-03
+
+- **Flycast standalone now defaults to Vulkan:** the regular standalone entry launches the Action Pi build based on official Flycast v2.7. Existing RetroArch standard/VL/Xtreme cores remain available.
+- **User-reported performance:** in the games tried, the user reports performance on par with or better than the RetroArch cores. This is a hands-on assessment, not a controlled benchmark or a guarantee for every game.
+- **Press L3 (click the left analog stick) to open Flycast settings.** Game and menu output use the full-frame rotation correction; HOME returns to ES.
+- **Settings persist:** vibration-pack selection and other settings changed in Flycast survive exit and relaunch. Explicit ES settings take priority; the remaining app preferences and controller remaps are retained.
+- **GL fallback path retained:** the launcher includes the original GL path when the Vulkan payload is unavailable or explicitly disabled; switching back to GL was not separately tested in this final revision. Test-only Ports entries are excluded.
+
+- **Flycast 스탠드얼론 Vulkan 기본 적용:** 평소 스탠드얼론 항목에서 공식 Flycast v2.7 기반 액션파이용 Vulkan 실행 파일을 사용합니다. 기존 RetroArch 일반·VL·Xtreme 코어도 유지합니다.
+- **사용자 실기 체감 기준, RetroArch 코어와 동등하거나 더 나은 성능**을 확인했습니다. 정식 동일 조건 벤치마크 결과나 모든 게임의 성능 보장을 뜻하지 않습니다.
+- **L3(왼쪽 아날로그 스틱 클릭)로 Flycast 설정 메뉴에 들어갑니다.** 게임과 자체 메뉴의 전체 화면 회전을 보정하고 HOME으로 ES에 복귀합니다.
+- **설정 유지 보완:** Flycast 안에서 고친 진동팩과 각종 설정을 종료·재실행 후에도 유지합니다. ES에서 명시한 옵션은 우선 적용하고, 나머지 앱 설정과 패드 재매핑은 보존합니다.
+- **GL 복구 경로 유지:** Vulkan 파일이 없거나 비활성화한 경우의 기존 GL 실행 분기를 유지합니다. 최종 수정판에서 GL로 되돌리는 전환 자체를 별도로 실기 재시험하지는 않았습니다. Ports 시험 항목은 포함하지 않습니다.
+
 ## v1.0.8 — 2026-10-31
 
 - **Image refresh r2 — Saturn controller compatibility:** the standalone now honors the ordinary digital/3D analog pad selector. This fixes the confirmed START-button issue in affected games. In ordinary pad mode, the left stick and physical D-pad can both drive digital directions while preserving the ordinary Saturn controller protocol. Held inputs are merged so releasing one source does not release the other; diagonals, a center deadzone and saved axis inversion are supported. True 3D mode retains its analog input.
